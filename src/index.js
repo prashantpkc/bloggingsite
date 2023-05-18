@@ -7,9 +7,7 @@ mongoose.set('strictQuery', true)
 
 app.use(express.json())
 
-
-
-mongoose.connect("mongodb+srv://Pal25:Pallavi2552@cluster0.hihf8kq.mongodb.net/Project1-BloggingSite",{useNewUrlParser:true})
+mongoose.connect("mongodb+srv://Pal25:Pallavi2552@cluster0.hihf8kq.mongodb.net/Project1-BloggingSite")
 
 .then(()=> console.log("DB is Connected"))
 .catch(err => console.log(err))

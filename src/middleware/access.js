@@ -13,7 +13,7 @@ const authorAuthentication = function (req, res, next) {
                 return res.status(401).send({ status: false, msg: "Invalid Token !! Please Login Again..." });
             }
             else {
-                req.decodedToken = decoded
+                req.decodedToken = decoded //we make decodedToken to global
                 next()
             }
         });

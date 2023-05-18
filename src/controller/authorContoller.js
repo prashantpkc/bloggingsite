@@ -5,6 +5,11 @@ const jwt = require('jsonwebtoken');
 let nameRegex = /^[a-zA-Z]{1,20}$/
 let passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/
 
+const obj ={
+    name:"prashjant",
+    age:24
+}
+
 const createAuthor = async function (req, res) {
     try {
         let authorData = req.body;
